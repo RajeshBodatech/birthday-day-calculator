@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date of Birth Day Calculator</title>
+    <link rel="stylesheet" href="day.css">
+</head>
+<body>
+    <div class="container">
+        <h1>☺️🤩️ Birthday Day Calculator ☺️🤩️</h1>
+        <div class="input-group">
+            <label for="date" style="font-size:25px;">Enter the Date:</label>
+            <input type="text" id="date" min="1" max="31" placeholder="Enter The Date(DD)">
+        </div>
+        <div class="input-group">
+            <label for="month" style="font-size:25px;">Enter the Month:</label>
+            <input type="text" id="month" min="1" max="12" placeholder="Enter The Month(MM)">
+        </div>
+        <div class="input-group">
+            <label for="year" style="font-size:25px;">Enter the Year:</label>
+            <input type="text" id="year" min="1600" max="2399" placeholder="Enter The Year(YYYY)">
+        </div>
+        <button onclick="calculateBirthday()">Calculate</button>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="day.js"></script>
+</body>
+</html>
+

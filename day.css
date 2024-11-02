@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to right, #fbc2eb, #a18cd1);
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 600px;
+    max-height:800px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #ff6347;
+    font-size: 24px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+h1:hover {
+    color: #ff6347;
+}
+
+.input-group {
+    margin-bottom: 45px;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+label:hover {
+    color: #ff6347;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    font-size: 16px;
+}
+
+input[type="text"]:focus {
+    border-color: #ff6347;
+    background-color: #fdf7f5;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.result {
+    margin-top: 30px;
+    font-size: 25px;
+    color:red;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.result.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 28px;
+    color:red;
+}
+
